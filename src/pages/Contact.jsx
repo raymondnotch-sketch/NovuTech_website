@@ -28,7 +28,7 @@ const CHANNELS = [
     icon: Mail,
     label: "Email",
     value: "hello@novutech.dev",
-    href: "mailto:rdwamena36#gmail.com",
+    href: "mailto:novutech.hq@gmail.com",
   },
   {
     icon: Github,
@@ -46,7 +46,7 @@ const CHANNELS = [
     icon: Linkedin,
     label: "LinkedIn",
     value: "NovuTech",
-    href: "https://www.linkedin.com/in/rosemary-boahemaa-dwamena-80b3a03b7?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+    href: "https://www.linkedin.com/company/novutech-hq",
   },
 ];
 

@@ -13,7 +13,7 @@ const NAV_LINKS = [
 const SOCIALS = [
   { icon: Github,   label: "GitHub",   href: "https://github.com/Rosieeee344/NovuTech_website" },
   { icon: Twitter,  label: "Twitter",  href: "https://x.com/dwamen1dwamena?s=11" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/rosemary-boahemaa-dwamena-80b3a03b7?utm_source=share_via&utm_content=profile&utm_medium=member_ios" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/novutech-hq" },
 ];
 
 export default function Footer() {

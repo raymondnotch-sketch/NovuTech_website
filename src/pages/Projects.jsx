@@ -302,7 +302,7 @@ export default function Projects() {
 
             <motion.div variants={fadeUp()}>
               <a
-                href="https://github.com/novutech"
+                href="https://github.com/Rosieeee344/NovuTech_website"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-ghost text-base px-7 py-3"

@@ -10,7 +10,7 @@ const TEAM = [
       Facebook: "https://www.facebook.com/share/18xA92qCCi/?mibextid=wwXIfr",
       Instagram: "https://www.instagram.com/_rosemaryboahemaa",
       Twitter: "https://x.com/dwamen1dwamena?s=11",
-      Linkedin: "https://www.linkedin.com/in/dwamena-rosemary-80b3a03b7",
+      Linkedin: "https://www.linkedin.com/in/rosemary-boahemaa-dwamena-80b3a03b7",
       Github: "https://github.com/Rosieeee344",
     },
   },

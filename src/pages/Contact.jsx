@@ -27,26 +27,26 @@ const CHANNELS = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@novutech.dev",
-    href: "mailto:hello@novutech.dev",
+    value: "hello@novutech.tech",
+    href: "mailto:novutech.hq@gmail.com",
   },
   {
     icon: Github,
     label: "GitHub",
     value: "github.com/novutech",
-    href: "https://github.com/novutech",
+    href: "https://github.com/Rosieeee344/NovuTech_website",
   },
   {
     icon: Twitter,
     label: "Twitter / X",
     value: "@novutech",
-    href: "https://twitter.com/novutech",
+    href: "https://x.com/NovuTechHQ",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
     value: "NovuTech",
-    href: "https://linkedin.com/company/novutech",
+    href: "https://www.linkedin.com/company/novutech-hq",
   },
 ];
 
@@ -60,20 +60,27 @@ export default function Contact() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("sending");
+  e.preventDefault();
+  setStatus("sending");
 
-    try {
-      // TODO: wire this up to your backend / email service (e.g. Formspree,
-      // EmailJS, or your own API route). This is just a stub so the UI
-      // has somewhere to go.
-      await new Promise((resolve) => setTimeout(resolve, 900));
-      setStatus("sent");
-      setForm({ name: "", email: "", subject: "", message: "" });
-    } catch (err) {
-      setStatus("error");
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    if (!res.ok) {
+      throw new Error("Failed to send message");
     }
-  };
+
+    setStatus("sent");
+    setForm({ name: "", email: "", subject: "", message: "" });
+  } catch (err) {
+    console.error(err);
+    setStatus("error");
+  }
+};
 
   return (
     <div>

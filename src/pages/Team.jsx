@@ -1,7 +1,12 @@
 import TeamMemberCard from "../components/TeamMemberCard";
+import ericaImg from "../assets/Erica.jpg";
+import obedImg from "../assets/Obed.png";
+import raymondImg from "../assets/Raymond.jpg";
+import rosemaryImg from "../assets/Rosemary.jpeg";
 
 const TEAM = [
   {
+    image: rosemaryImg,
     name: "Rosemary Boahemaa Dwamena",
     initials: "RBD",
     role: "Team Lead & Developer",
@@ -10,11 +15,12 @@ const TEAM = [
       Facebook: "https://www.facebook.com/share/18xA92qCCi/?mibextid=wwXIfr",
       Instagram: "https://www.instagram.com/_rosemaryboahemaa",
       Twitter: "https://x.com/dwamen1dwamena?s=11",
-      Linkedin: "https://www.linkedin.com/in/dwamena-rosemary-80b3a03b7",
+      Linkedin: "https://www.linkedin.com/in/rosemary-boahemaa-dwamena-80b3a03b7",
       Github: "https://github.com/Rosieeee344",
     },
   },
   {
+    image: ericaImg,
     name: "Erica Dansowaa",
     initials: "ED",
     role: "Frontend Developer & Documentation Lead",
@@ -28,6 +34,7 @@ const TEAM = [
     },
   },
   {
+    image: raymondImg,
     name: "Raymond Selorm Tormeti",
     initials: "RST",
     role: "Design Lead & Developer",
@@ -41,6 +48,7 @@ const TEAM = [
     },
   },
   {
+    image: obedImg,
     name: "Obed Yakpa",
     initials: "OY",
     role: "Backend Lead & Developer",
@@ -66,7 +74,7 @@ export default function Team() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {TEAM.map((member) => (
           <TeamMemberCard key={member.name} {...member} />
         ))}
